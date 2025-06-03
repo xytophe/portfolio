@@ -538,6 +538,15 @@ h1{
     list-style: disc;
 }
 
+.modal-content a {
+    color: rgb(132, 219, 25);
+    text-decoration: none;
+}
+
+.modal-content a:hover {
+    text-decoration: underline;
+}
+
 .close {
     position: absolute;
     top: 15px;
