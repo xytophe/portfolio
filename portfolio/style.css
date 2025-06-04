@@ -1108,3 +1108,17 @@ textarea :focus{
 ::-webkit-scrollbar {
     width: 0px; /* Width of the scrollbar */
   }
+
+#contact-social {
+    max-width: 700px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+#contact-address {
+    max-width: 800px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
