@@ -432,7 +432,6 @@ h1{
     flex-wrap: wrap;
     background-color: #26262c;
     border-radius: 20px;
-    padding: 20px;
 }
 
 .project-section {
@@ -588,7 +587,6 @@ h1{
     justify-content: center;
     border-radius: 20px;
     margin-top: 20px;             /* un petit écart par rapport à project-box */
-    padding: 20px;
 }
 
 .important {
@@ -607,6 +605,7 @@ h1{
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    margin: 20px;
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
