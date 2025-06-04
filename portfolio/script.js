@@ -81,3 +81,16 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
+// ———————————————————————————————————————————————
+// Ouverture / fermeture de la modale “Portfolio d’apprentissage”
+// ———————————————————————————————————————————————
+
+// Quand on clique sur la boîte “Portfolio d’apprentissage”
+const btnLearning = document.getElementById('btn-learning');
+btnLearning.addEventListener('click', () => {
+  const modalLearning = document.getElementById('modal-learning');
+  if (modalLearning) {
+    modalLearning.style.display = 'flex';
+  }
+});

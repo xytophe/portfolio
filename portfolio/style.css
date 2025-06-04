@@ -576,8 +576,78 @@ h1{
     }
 }
 
+/* ———————————————————————————————————————————————
+   Styles pour “Portfolio d’apprentissage”
+   ——————————————————————————————————————————————— */
 
+/* Conteneur de la boîte “Portfolio d’apprentissage” */
+.learning-box {
+    width: 100%;
+    background-color: #26262c;    /* même fond que .project-box */
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    margin-top: 20px;             /* un petit écart par rapport à project-box */
+    padding: 20px;
+}
 
+/* La “carte” cliquable à l’intérieur de learning-box */
+.learning-section {
+    width: 300px;
+    height: 100px;
+    background-color: #2f3037;        /* un tout petit peu plus clair que le parent */
+    border: 3px solid #393a41;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.learning-section:hover {
+    background-color: #393a41;
+    transform: scale(1.02);
+}
+
+.learning-section h4 {
+    margin: 0 0 10px 0;
+    color: #f5deb3;
+    font-size: 18px;
+    text-align: center;
+}
+
+.learning-section button {
+    background-color: #ce4f20;
+    border: none;
+    border-radius: 10px;
+    padding: 8px 16px;
+    color: #f5deb3;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.learning-section button:hover {
+    background-color: rgb(132, 219, 25);
+}
+
+/* ———————————————————————————————————————————————
+   Ajustement du CSS de la modale “Portfolio d’apprentissage”
+   ——————————————————————————————————————————————— */
+
+/* Comme la modale réutilise la classe .project-modal,
+   on n’a pas besoin de redéfinir position/display. On ajuste juste la hauteur du contenu : */
+#modal-learning .modal-content {
+    max-height: 95vh;       /* quasi toute la hauteur de l’écran */
+    min-width: 150vh;
+}
+
+#modal-learning .ce{
+    font-style: italic;
+}
 
 .Education{
     display: none;
