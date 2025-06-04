@@ -591,6 +591,10 @@ h1{
     padding: 20px;
 }
 
+.important {
+    color: rgb(132, 219, 25);
+}
+
 /* La “carte” cliquable à l’intérieur de learning-box */
 .learning-section {
     width: 300px;
@@ -645,8 +649,9 @@ h1{
     min-width: 150vh;
 }
 
-#modal-learning .ce{
+#modal-learning .ce {
     font-style: italic;
+    color: #ce4f20;
 }
 
 .Education{
