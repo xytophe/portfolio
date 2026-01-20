@@ -765,23 +765,30 @@ h1{
     height: 100%;
     padding-inline: 40px;
 }
-  
+
+#skills a {
+  text-decoration: none;
+  color: inherit;
+}  
+
+#skill-desc {
+    padding: 15px;
+}
 
 #skills-box{
     
     border-radius: 20px;
     background-color: #26262c;;
     width: 100%;
-    height: 100%;
-    
-    
-    
+    height: 100%;    
 }
+
 #skills-box div{
     display: flex;
     justify-content: space-evenly;
     
 }
+
 .skills-tab{
     width: 110px;
     height: 110px;

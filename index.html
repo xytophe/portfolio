@@ -88,7 +88,7 @@
             <div id="about-right" class="about">
                 <p id="about-p">
                     Salutations,<br><br>
-                    Je suis Lucas Cordeilla, j'ai 20 ans et je suis étudiant en deuxième année de BUT Informatique. De nature calme, serein et curieux, j’aime apprendre en permanence et approfondir mes connaissances. Mon intérêt pour l’informatique remonte à plus de sept ans, avec une passion particulière pour la cybersécurité. Depuis un peu plus d’un an, je me découvre également une fascination pour l’investigation et l’OSINT, ce qui enrichit encore davantage mon approche du monde numérique et de la protection des systèmes.<br><br>
+                    Je suis Lucas Cordeilla, j'ai 21 ans et je suis étudiant en troisième année de BUT Informatique. De nature calme, serein et curieux, j’aime apprendre en permanence et approfondir mes connaissances. Mon intérêt pour l’informatique remonte à plus de sept ans, avec une passion particulière pour la cybersécurité. Depuis un peu plus d’un an, je me découvre également une fascination pour l’investigation et l’OSINT, ce qui enrichit encore davantage mon approche du monde numérique et de la protection des systèmes.<br><br>
                     Je me suis orienté vers un BUT Informatique afin, dans un premier temps, de consolider mes connaissances et d’acquérir de solides bases dans la majorité des domaines de l’informatique, pour ensuite me spécialiser en cybersécurité.<br>
                     Après l’obtention de mon diplôme, j’ai pour objectif de suivre une formation spécialisée en cybersécurité et en investigation. À terme, mes ambitions professionnelles sont multiples : d’abord rejoindre une petite structure réalisant des opérations de pentesting pour d’autres entreprises et menant également des investigations sur demande. Je n’écarte pas non plus la possibilité d’intégrer une agence de renseignement telle que la DGSI ou la DGSE. Je suis également séduit par l’idée de créer ma propre entreprise d’investigation privée.<br><br>
                     Ouvert à diverses opportunités, j’attends de voir où la vie me mènera.
@@ -172,6 +172,9 @@
             <h3>Technologies pratiquées</h3>
             <div id="line"></div>
         </div>
+        <div class="about">
+            <p id="skill-desc">Sur cette page, vous trouverez un petit aperçu des technologies avec lesquelles j’ai déjà travaillé. Elles reflètent les outils et langages que j’ai appris à maîtriser au fil de mes projets, qu’ils soient personnels ou académiques.</p>
+        </div>
         <div id="skills-box">
             <div>
                 <a href="https://fr.wikipedia.org/wiki/Zabbix" target="_blank" rel="noopener noreferrer">
@@ -254,6 +257,19 @@
         </div>
         <div class="project-box">
             <div class="project-left">
+
+                <!-- Projet 7 -->
+                <div class="project-section" data-project="project7">
+                    <img src="images/projects/docker.jpg" alt="Aperçu Projet 7">
+                    <h4>Infrastructure virtualisée complète sous Docker | 2026</h4>
+                </div>
+
+                <!-- Projet 5 -->
+                <div class="project-section" data-project="project5">
+                    <img src="images/projects/keylogger-1.png" alt="Aperçu Projet 5">
+                    <h4>Keylogger – Projet de cybersécurité | 2025</h4>
+                </div>
+
                 <!-- Projet 1 -->
                 <div class="project-section" data-project="project1">
                     <img src="images/projects/zabbix.png" alt="Aperçu Projet 1">
@@ -266,6 +282,13 @@
                 </div>
             </div>
             <div class="project-right">
+
+                 <!-- Projet 6 -->
+                <div class="project-section" data-project="project6">
+                    <img src="images/projects/RAFT-1.png" alt="Aperçu Projet 6">
+                    <h4>Cluster de nœuds – Implémentation du protocole RAFT | 2025</h4>
+                </div>
+
                 <!-- Projet 3 -->
                 <div class="project-section" data-project="project3">
                     <img src="images/projects/bots-logs-1.webp" alt="Aperçu Projet 3">
@@ -289,6 +312,99 @@
 
     <!-- Modales de détails de chaque projet -->
     <div id="modal-container">
+
+        <!-- Modal Projet 7 -->
+        <div class="project-modal" id="modal-project7">
+            <div class="modal-content">
+                <span class="close" data-close="modal-project7">&times;</span>
+                <h2>Infrastructure virtualisée complète sous Docker | 2026</h2>
+                <img src="images/projects/nextcloud.webp" alt="Détail Projet Infrastructure Docker">
+                <p>
+                    Dans le cadre d’un projet académique orienté systèmes et DevOps, j’ai conçu et déployé une
+                    infrastructure virtualisée complète reposant sur Docker et Docker Compose.
+                </p>
+                <p>
+                    Cette infrastructure intègre plusieurs services interconnectés : OpenLDAP pour la gestion des identités,
+                    Keycloak pour l’authentification et la fédération d’identités, Nextcloud pour le stockage collaboratif,
+                    Traefik comme reverse proxy et point d’entrée sécurisé, ainsi qu’une stack de supervision basée sur
+                    Grafana, Loki et Promtail.
+                </p>
+                <p>
+                    Un service de messagerie collaborative Convos a également été intégré, l’ensemble étant pensé pour
+                    fonctionner de manière cohérente, sécurisée et facilement déployable sur un environnement serveur.
+                    L’accent a été mis sur la gestion des certificats, l’authentification centralisée et l’observabilité
+                    de l’infrastructure.
+                </p>
+                <p>
+                    Ce projet m’a permis de développer des compétences solides en conteneurisation, en architecture
+                    de services, en gestion des identités, ainsi qu’en supervision et administration système dans un
+                    contexte proche d’une infrastructure professionnelle.
+                </p>
+            </div>
+        </div>
+
+
+        <!-- Modal Projet 5 -->
+        <div class="project-modal" id="modal-project5">
+            <div class="modal-content">
+                <span class="close" data-close="modal-project5">&times;</span>
+                <h2>Keylogger – Projet de cybersécurité | 2025</h2>
+                <img src="images/projects/keylogger-2.png" alt="Détail Projet Keylogger">
+                <p>
+                    Dans le cadre d’un projet académique en cybersécurité, j’ai réalisé un proof of concept (POC) de keylogger
+                    afin d’étudier le fonctionnement interne de ce type de logiciel malveillant et de mieux comprendre
+                    les mécanismes utilisés lors d’attaques réelles.
+                </p>
+                <p>
+                    L’objectif principal était pédagogique : analyser le cycle de vie complet d’un malware, depuis la
+                    capture des frappes clavier jusqu’à l’exfiltration des données, en passant par la persistance sur le
+                    système cible. Le projet a été développé et testé exclusivement dans un environnement isolé et contrôlé,
+                    conformément aux bonnes pratiques et au cadre légal.
+                </p>
+                <p>
+                    L’architecture repose sur plusieurs composants distincts écrits en C côté client (capture, persistance,
+                    exfiltration) ainsi qu’une application serveur en Node.js pour la réception et le traitement des données.
+                    Les logs capturés sont chiffrés en continu afin de simuler des mécanismes d’évasion et de discrétion.
+                </p>
+                <p>
+                    Ce projet m’a permis d’approfondir mes connaissances des API Windows, de la programmation bas niveau,
+                    de la cryptographie appliquée, ainsi que des enjeux de détection et d’analyse des logiciels malveillants.
+                    Une attention particulière a également été portée aux aspects légaux et éthiques liés à ce type de développement.
+                </p>
+                <p>Ce projet est publique et peux être consulté <a href="https://github.com/xytophe/Zorin-s-Logger">ici</a>.</p>
+            </div>
+        </div>
+
+        <!-- Modal Projet 6 -->
+        <div class="project-modal" id="modal-project6">
+            <div class="modal-content">
+                <span class="close" data-close="modal-project6">&times;</span>
+                <h2>Cluster de nœuds – Protocole RAFT | 2025</h2>
+                <img src="images/projects/RAFT-2.png" alt="Détail Projet Cluster RAFT">
+                <p>
+                    Ce projet a été réalisé dans le cadre du cours de programmation système avancée en BUT Informatique.
+                    Il consistait à concevoir une application en langage C permettant de mettre en place un cluster de
+                    nœuds communicants implémentant une version simplifiée du protocole de consensus RAFT.
+                </p>
+                <p>
+                    Le développement s’est déroulé en plusieurs étapes progressives : mise en place des communications
+                    réseau via sockets TCP, synchronisation des nœuds, implémentation d’un protocole d’élection de leader,
+                    puis ajout d’un journal répliqué et d’une table clé–valeur distribuée.
+                </p>
+                <p>
+                    Le cluster est capable de s’auto-organiser, d’élire un leader par quorum, de tolérer la perte d’un ou
+                    plusieurs nœuds et de garantir la cohérence des données grâce à la réplication des écritures validées
+                    par la majorité. Un client dédié permet d’interagir avec le cluster via des opérations PUT et GET.
+                </p>
+                <p>
+                    Ce projet m’a permis de renforcer mes compétences en programmation système, en concurrence,
+                    en réseaux, ainsi que ma compréhension des systèmes distribués, de la tolérance aux pannes et des
+                    mécanismes de consensus utilisés dans les infrastructures modernes.
+                </p>
+                <p>Ce projet est publique et peux être consulté <a href="https://gitlabinfo.iutmontp.univ-montp2.fr/fesqueta/projet-cluster-de-noeuds">ici</a>.</p>
+            </div>
+        </div>
+
         <!-- Modal Projet 1 -->
         <div class="project-modal" id="modal-project1">
             <div class="modal-content">
@@ -337,7 +453,7 @@
                 <p>Parmi mes projets, celui dont je suis le plus fier est Foxelia, un service d’hébergement que j’ai cofondé en 2024 avec un ami. Nous avons lancé cette initiative sous forme d’association à but non lucratif, avec l’objectif de proposer des solutions d’hébergement (web, Node.js, Minecraft, Palworld, etc.) à des tarifs ultra-compétitifs, accessibles aux passionnés et aux amateurs.</p>
                 <p>Notre ambition était double : offrir une alternative abordable à l’hébergement traditionnel, tout en découvrant concrètement les rouages de la vente en ligne, de la gestion client, de la communication, et de l’administration de serveurs (physiques comme virtuels).</p>
                 <p>Ce projet s’est révélé extrêmement formateur. Il m’a permis de développer des compétences en gestion financière, en relation client, en communication web, ainsi qu’en virtualisation et en administration système.</p>
-                <p>La vitrine du projet est accessible à l’adresse suivante : <a href="https://heberg.foxelia.fr/">https://foxelia.fr/</a></p>
+                <p>Ce service n'existe plus depuis début 2026 et est en cours transformation en un nouveau qui devrait arriver vers Juin 2026.</p>
             </div>
         </div>
     </div>
